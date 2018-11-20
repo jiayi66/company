@@ -1,0 +1,513 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul,li,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+
+}
+
+
+/* 头部 */
+.title{
+  width: 100%;
+  height: 76px;
+}
+.title-left{
+    width: 40%;
+    height: 100%;
+}
+.title-left a img{
+   width: 330px;
+   margin-left:16px; 
+   margin-top: 8px;
+}
+.title-right{
+    width: 60%;
+    height: 100%;
+}
+.title-right .menuUl{
+
+  height: 100%;
+}
+.title-right .menuUl ul{
+  height: 100%;
+  line-height: 76px;
+}
+.title-right .menuUl ul li{
+   height: 100%;
+   float: left;
+   margin-right: 35px;
+}
+.title-right .language{
+   height: 100%;
+  
+   margin-right: 8px; 
+  
+}
+.title-right .language .languageContent{
+  height: 30px;
+  width: 140px;
+  border: 1px solid #999;
+  line-height: 30px;
+  text-align: center;
+  margin-top:20px; 
+  border-radius: 0 0 0 9px;
+}
+.title-right .language .languageContent a{
+    font-size: 12px;
+
+}
+
+.title-right .language .languageContent a:nth-child(2){
+  border-left: 1px solid #000;
+  padding-left: 5px
+}
+/* 轮播 */
+.banner{
+  width: 100%;
+  position: relative;
+  overflow: hidden; 
+  height: 560px;
+}
+.banner ul{
+  width: 400%;
+  position: absolute;
+}
+.banner ul li{
+  float: left;
+  width: 25%;
+  position: relative;
+}
+.banner ul li a img{
+  width: 100%;
+  height: 500px;
+}
+.banner ol{
+  width: 90px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  margin-left:-45px;
+  top: 520px;
+ z-index: 999
+}
+.banner ol li{
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color:#ccc;
+  float: left;
+  margin-left: 10px;
+}
+
+.banner span{
+   width: 30px;
+   height: 55px;
+   font-size: 40px;
+   background-color: rgba(0,0,0,0.5);
+   color:#666;
+   position: absolute;  
+   top:220px;
+   cursor: pointer;
+}
+
+.banner span:nth-child(4){
+  left:0px;
+ 
+}
+.banner span:nth-child(3){
+  right:0px;
+}
+.project{
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.project .title{
+   width: 100%;
+   text-align: center;
+}
+.project .title h1{
+  font-weight: normal
+}
+.project .title .case{
+  margin: 6px 0 10px 0;
+  font-size: 13px;
+  position: relative;
+}
+.project .title .case i{
+  display: inline-block;
+  width: 110px;
+  height: 1px;
+  background-color: #000;
+  z-index: -999
+}
+.project .title .case span{
+  display: inline-block;
+  width: 50px;
+  position: absolute;
+  top:3px;
+  left:50%;
+  margin-left: -24px;
+  background-color: #fff;
+
+}
+.project .title .major{
+  font-size: 14px
+}
+.project .content{
+  width: 100%;
+  margin-top: 60px;
+  
+}
+.project .content ul{
+  width: 100%;
+}
+.project .content ul li{
+  float: left;
+  width: 25%;
+  text-align: center
+}
+.project .content ul li a{
+  width: 100%;
+ 
+}
+
+.project .content ul li a img{
+  width: 100%;
+  height: 520px
+}
+.project .content ul li p{
+  color: #333;
+ 
+}
+.project .bottom{
+  text-align: center;
+  margin-top: 30px;
+}
+.project .bottom a p{
+  font-size: 18px;
+  font-weight: normal;
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 8px 25px;
+}
+/* 关于我们  */
+
+
+.regard{
+ margin-right:50px;
+ width: 100%;
+ background-color:#f1f4f7;
+}
+.regard .reg-left {
+ width: 50%;
+ float: left
+}
+.regard .reg-left img {
+  width: 100%;
+  height:470px;
+ }
+ .regard .reg-right{
+   width: 50%;
+   float: right;
+   
+ }
+ .regard .reg-right a h2,.regard .reg-right p{
+    margin-left: 50px;
+ }
+ .regard .reg-right a h2{
+   font-weight: normal;
+   font-size: 28px;
+   margin: 50px 50px;
+ }
+ .regard .reg-right>p{
+margin-bottom: 30px;
+ }
+ .regard .reg-right a p{
+   border: 1px solid #000;
+   display: inline-block;
+   padding: 8px 30px;
+   margin-top: 20px
+ }
+ .select{
+   width: 100%;
+   margin-top: 50px;
+
+ }
+ .select p{
+   text-align: center;
+ }
+ .select p:nth-child(1){
+   font-size:34px;
+   margin-bottom: 10px;
+ }
+ .select p:nth-child(2){
+  font-size:14px;
+  margin-bottom: 60px;
+  color: #666
+}
+.select ul {
+  margin: 0 80px;
+}
+ .select ul li{
+   float: left;
+   width: 20%;
+   text-align: center;
+   margin-right: 60px;
+ }
+ .select ul li dl dt{
+   font-size: 20px;
+   margin: 20px 0;
+ }
+ .select ul li dl dd{
+   font-size: 14px;
+   margin:4px 0;
+ }
+ .products{
+   text-align: center;
+   position: relative;
+   margin-top: 50px;
+ }
+.products title{
+  width: 100%;
+  text-align: center;
+}
+.products .title h1 {
+ font-weight: normal
+}
+.products .title .case{
+ margin: 6px 0 20px 0;
+ font-size: 13px;
+ position: relative;
+}
+.products .title .case i{
+ display: inline-block;
+ width: 120px;
+ height: 1px;
+ background-color: #666;
+ z-index: -999;
+
+}
+.products .title .case span{
+ display: inline-block;
+ width:62px;
+ position: absolute;
+ top:3px;
+ left:50%;
+ margin-left: -31px;
+ background-color: #fff;
+ color: #666;
+}
+.products .title .major{
+ font-size: 14px;
+ color: #666;
+ margin-top: 6px;
+}
+.products-tu{
+  margin-top: 100px;
+}
+.products-tu img{
+  width: 400px;
+  vertical-align: top;
+  margin-left: 10px;
+  
+}
+/* 新闻资讯 */
+.news{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+
+}
+.news .title{
+  margin-bottom: 20px;
+}
+.news .title h1 {
+  font-weight: normal
+ }
+ .news .title .case{
+  margin: 6px 0 60px 0;
+  font-size: 13px;
+  position: relative;
+ }
+ .news .title .case i{
+  display: inline-block;
+  width: 120px;
+  height: 1px;
+  background-color: #666;
+  z-index: -999;
+ 
+ }
+ .news .title .case span{
+  display: inline-block;
+  width:62px;
+  position: absolute;
+  top:3px;
+  left:50%;
+  margin-left: -31px;
+  background-color: #fff;
+  color: #666;
+ }
+ .news .newCont{
+   width: 100%;
+ }
+ .news .newCont img{
+   float: left;
+   width: 43%;
+   margin-left:20px; 
+ }
+ .news .newCont .newContR{
+   float: left;
+   margin-left: 30px;
+   width: 53%;
+
+ }
+ .news .newCont .newContR .content {
+   border-bottom: 1px solid #ccc;
+   margin-bottom: 5px;
+ }
+ .news .newCont .newContR .content .left{
+  float: left;
+  border: 1px solid #ccc;
+  width: 80px;
+  height: 60px;
+  text-align: center;
+  
+ }
+ .news .newCont .newContR .content .left .day{
+   float: left;
+   font-size: 34px;
+   color: #2d6056
+ } 
+ .news .newCont .newContR .content .left .month{
+   float: left;
+   font-size: 18px;
+   color: #666;
+   margin-top: 15px;
+ }
+
+ .news .newCont .newContR .content .left .year{
+   width: 100%;
+   height: 26px;
+  text-align: center;
+  line-height: 26px;
+  background-color: #999;
+  float: left;
+  color: #666;
+ }
+ .news .newCont .newContR .content .right{
+   float: left;
+   margin-left: 8px;
+   margin-top: 20px;
+ }
+ .news .newCont .newContR .content .right a p{
+   text-align: left;
+   font-size: 16px;
+   margin-bottom: 8px;
+ }
+ .news .newCont .newContR .content .right>p{
+  font-size: 12px;
+ color: #999
+ }
+ .news .newCont .newContR .content .right .cha{
+   border: 1px solid #ccc;
+   font-size: 12px;
+   color: #666;
+   padding: 5px 60px;
+   margin: 10px 0;
+   float: left
+ }
+ .news .newCont .newContR .page{
+   margin-left: 150px;
+   margin-top: 20px;
+ }
+ .news .newCont .newContR .page ul li{
+   float: left;
+   border: 1px solid #ccc;
+   width: 24px;
+   height: 24px;
+   color: #333;
+   font-size: 13px;
+   line-height: 24px;
+   margin-right: 10px;
+ }
+ .news .newCont .newContR .page >a{
+  float: left;
+   color: #333;
+   font-size: 14px;
+   margin-top: 2px;
+ }
+ .news .newCont .newContR .page ul li.pitch {
+  border: 1px solid #000;
+ }
+ .relation{
+   width: 100%;
+   margin-top: 150px;
+ }
+ .relation img{
+   width: 450px;
+   margin-left: 200px;
+   float: left
+ }
+ .relation  .from{
+   width: 50%;
+  float: left;
+  text-align: center;
+  position: relative
+ }
+ .relation  .from p{
+   text-align: center;
+   font-size: 18px;
+   margin-bottom: 15px;
+ }
+ .relation  .from input{
+   height: 40px;
+   width: 460px;
+   background-color: #f5f5f5;
+   margin-bottom: 15px;
+   outline:none;
+   border: none; 
+   padding-left: 20px;
+ }
+ .relation  .from textarea{
+   width: 478px;
+   height:150px;
+   background-color: #f5f5f5;
+   outline:none;
+   border: none; 
+   resize: vertical;
+ }
+ .relation  .from  button{
+   width: 100px;
+   height:35px;
+   position: absolute;
+   right: 121px;
+   bottom:-64px;
+   background-color: #2d6056;
+   outline:none;
+   border: none; 
+ }
+ .foot{
+   margin-top:250px;
+ }
